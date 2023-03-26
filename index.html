@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>Document</title>
+    <style>
+
+        body
+        {
+            background: url('img/new.jpg') no-repeat center center/cover; 
+        }
+        section::before{
+            content: "";
+            background: url('img/new.jpg') no-repeat center center/cover; 
+            position:absolute;
+            width: 100%;
+            height:100%;
+            opacity:4;
+            z-index:-1;
+            top: 0px;
+            left:0px;
+
+        }
+
+     
+        .left
+        {
+            display:inline-block;
+        }
+        .right
+        {
+            position:absolute;
+            display:inline-block;
+            right:104px;
+            top:40px;
+        }
+        .centre
+        {
+            border:2px solid black;
+            background-color: black;
+            display:block;
+            width: 58%;
+            margin: -101px 286px;
+            position: sticky;
+            border-radius: 130px;
+            padding: -2px;
+        }
+        .left img
+        {
+            width:100%;
+        }
+        .left h1
+        {
+            margin:-1px;
+            font-size:24px;
+            color:#34fff9;
+            text-align: center;
+        }
+        .nav
+        {
+            display:inline-block;
+        }
+        .nav li{
+            display: inline-block;
+        }
+        .nav li a{
+            text-decoration: none;
+            color:aliceblue;
+            margin:9px;
+            font-size:29px;
+        }
+        .nav li a:hover
+        {
+            color:#ffe000;
+            cursor: crosshair;
+        }
+        .right input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 8px 10px;
+            width: 162px;
+            background-color: #0e02ff;
+            margin:-66px;
+        }
+        ::placeholder
+        {
+            color:white;
+            font-size: 20px;
+        }
+        .cont p
+        {
+            color:#d4e10e;
+            position: absolute;
+            top: 15%;
+            left: 22%;
+            font-size: 36px;
+        }
+        .container{
+        margin: 211px 300px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input
+    {
+        width:96%;
+        margin:4px;
+        background-color:#000000;
+        text-align: center;
+        display: block;
+        padding:7px;
+        color:aliceblue;
+        border-radius: 43px;
+    }
+    .btn
+    {
+        
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+        background-color: #000000;
+        text-align: center;
+        color:white;
+        padding: 4px;
+        border-radius: 35px;
+    }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="left">
+            <img src="img/logo1.jpg" alt="">
+            <h1>Maneesh Cric Talks</h1>
+        </div>
+        <div class="centre">
+            <ul class="nav">
+                <li><a href="backend.php">Home</a></li>
+                <li><a href="backend.php">Live Prediction</a></li>
+                <li><a href="backend.php">Stats</a></li>
+                <li><a href="backend.php">About us</a></li>
+                <li><a href="backend.php">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+                <input type="text" name="Find" id="find" placeholder="Search in website">
+        </div>
+        <div class="cont">
+            <p>For accurate live predictions and expert talk join here</p>
+        </div>
+        <div class="container">
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Nationality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
